@@ -1,4 +1,4 @@
-baseurl = "https://johnharris.io"
+baseurl = "https://johnharris.io/"
 languageCode = "en-us"
 title = "~/projects/johnharris.io"
 # Copyright notice. This is displayer in the footer.
