@@ -1,0 +1,40 @@
+baseurl = "https://johnharris.io"
+languageCode = "en-us"
+title = "~/projects/johnharris.io"
+# Copyright notice. This is displayer in the footer.
+copyright = "&copy; John Harris"
+pygmentsuseclasses = "true"
+pygmentscodefences = "true"
+
+[permalinks]
+    blog = "/:year/:month/:slug/"
+
+[taxonomies]
+    tag = "tags"
+    series = "series"
+
+[params]
+    # Social accounts. Link to these accounts are displayed in the header and
+    # footer.
+    twitter = "johnharris85"
+    github = "johnharris85"
+    linkedin = "johnharris85"
+    # googleplus = "Your Google+ user id"
+    # facebook = "johnharris85"
+    stackoverflow = "559504"
+    keybase = "johnharris85"
+    # instagram = "Your Instagram username"
+    # Disqus shortname
+    # disqus = "johnharrisioblog"
+    # Google Analytics API key.
+    ga_api_key = "UA-98809130-1"
+    # Mixpanel API key.
+    # mixpanel_api_key = "Your Mixpanel API key"
+    author = "John Harris"
+    avatar = "/images/profile.png"
+    contact = "mailto:john@johnharris.io"
+    bio = "Sr. Cloud Native Architect @ VMware"
+    # Short subtitle/tagline. This is displayed in the header.
+    subtitle = "Kubernetes . DevOps . Open-Source"
+    themecolor = "#2E94AB" # Defines the tab color in Chrome for Android.
+    home_image = "seattle-dusk.jpg"

@@ -1,0 +1,16 @@
+{{ partial "header.html" . }} {{ $baseurl := .Site.BaseURL }}
+<section class="article-list">
+  <h1>Series: {{ .Title }}</h1>
+  {{ range .Data.Pages.ByParam "series_part" }}
+  <hr/>PART {{ .Params.series_part }} - 
+  {{ .Render "li" }}
+  {{ end }}
+</section>
+<div class="blog-share" style="margin-bottom: 25px; margin-top: 45px">
+        <a class="twitter-share-button" href="https://twitter.com/intent/tweet?text={{ .Title }}%20Post%20Series%20{{ .Permalink }}%20by%20@{{ .Site.Params.twitter }}" onclick="window.open(this.href, 'twitter-share', 'width=550,height=235');return false;">
+            <img src="{{ $baseurl }}/images/tweet.png" />
+        </a>
+        <a href="#top" style="float: right;">Go To Top <i class="fa fa-arrow-up" aria-hidden="true"></i></a>
+</div>
+{{ partial "footer.html" . }}
+
