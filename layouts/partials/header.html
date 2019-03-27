@@ -9,9 +9,7 @@
   {{ end }}
   <meta property="og:site_name" content="{{ .Site.Title }}" />
   <meta property="og:url" content="{{ .Permalink }}" />
-  {{ with .Params.images }}{{ range first 5 . }}
-  <meta property="og:image" content="{{ . }}" />
-  {{ end }}{{ end }}
+  <meta property="og:image" content="{{ .Site.BaseURL }}images/seattle-dusk-og.jpg" />
   {{ if .IsPage }}
   <meta property="og:type" content="article" />
   {{ with .Site.Params.facebook }}
