@@ -1,9 +1,10 @@
 +++
-description = ""
+title = ""
 tags = []
 series = []
 series_part = 0
-slug = ""
 draft = true
+publishDate = "{{ .Date }}" #fix me
+headerImage = ""
 
 +++

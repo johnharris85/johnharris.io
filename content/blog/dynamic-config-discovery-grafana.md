@@ -2,9 +2,9 @@
 tags = ["Prometheus", "Grafana", "Kubernetes"]
 series = []
 series_part = 0
-slug = ""
 title = "Dynamic Configuration Discovery in Grafana"
 publishDate = "2019-03-25"
+headerImage = "seattle-dusk-og.jpg"
 
 +++
 
