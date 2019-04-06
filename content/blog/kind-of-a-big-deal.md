@@ -3,8 +3,8 @@ title = "Kubernetes in Docker: Kind of a Big Deal"
 tags = ["Kind", "Kubernetes", "Kubeadm", "Bootstrapping", "Docker"]
 series = []
 series_part = 0
-draft = true
 publishDate = "2019-04-05"
+headerImage = "kind-of-a-big-deal.jpg"
 
 +++
 
@@ -13,6 +13,8 @@ I've been playing a little bit with the [Cluster API](https://github.com/kuberne
 Kind was born out of the neccessity for a lightweight local Kubernetes setup that could be used for testing and conformance. It has uses now across several SIGs and the [goals of the project](https://kind.sigs.k8s.io/docs/design/principles/) are laid out in the official docs.
 
 <!--more-->
+
+![](/images/kind-of-a-big-deal.jpg)
 
 ## What is Kind?
 
