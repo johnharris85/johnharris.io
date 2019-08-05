@@ -14,6 +14,8 @@ Kubernetes supports the concept of ['impersonation'](https://kubernetes.io/docs/
 
 <!--more-->
 
+*__Update__ (8/5/19): My awesome colleague [Duffie](https://twitter.com/mauilion) showed me a project called [kubectl-sudo](https://github.com/postfinance/kubectl-sudo) that utilizes these ideas as a kubectl plugin so check that out if you're interested! (it only supports elevation to admin privileges as-is, but could be modified pretty easily)*
+
 ## What are we trying to do?
 
 In our example Kubernetes cluster we have a multi-tenant environment with each application development team having their own namespace. Our developers aren't _super_ familiar with Kubernetes, so while we want to give them admin access to their namespace, most of their use cases really just involve viewing the state, rather than changing things. In this example we only have one team, the 'app-team'.
@@ -24,7 +26,7 @@ Enter impersonation!
 
 ![](/images/fregoli.jpg)
 
-Using impersonation, we're going to setup a system where there will be `admin` roles for each application's namespace, however we will _not_ be giving this role directly to the `app-team` group. Instead we will be adding creating an `app-team-admin` user that has the role bound to them. Then we can give permissions for our `app-team` group to _impersonate_ that `app-team-admin` user. We also bind a `view-only` role to the `app-team` group so that by default, all their regular `kubectl` commands will be enacted with read-only permissions. If they should need to change things in the cluster, they can impersonate the admin by using `--as=app-team-admin` with their `kubectl` commands.
+Using impersonation, we're going to setup a system where there will be `admin` roles for each application's namespace, however we will _not_ be giving this role directly to the `app-team` group. Instead we will be adding an `app-team-admin` user that has the role bound to them. Then we can give permissions for our `app-team` group to _impersonate_ that `app-team-admin` user. We also bind a `view-only` role to the `app-team` group so that by default, all their regular `kubectl` commands will be enacted with read-only permissions. If they should need to change things in the cluster, they can impersonate the admin by using `--as=app-team-admin` with their `kubectl` commands.
 
 We will setup a similar system for the `ops-team`, making use of the `cluster-admin` ClusterRole that already exists and binding it to a `cluster-admin` user that we will allow members of the `ops-team` group to impersonate / assume.
 
