@@ -8,7 +8,7 @@
                 <time datetime="{{ .Date.Format " 2006-01-02T15:04:05Z07:00 " | safeHTML }}">
                     {{ .Date.Format "Jan 2, 2006" }}
                 </time>
-               &nbsp;---&nbsp;{{ .ReadingTime }} minute read
+               &nbsp;---&nbsp;{{ .ReadingTime }} minute read &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
             </div>
             <div class="pull-right">
                 {{ range .Params.tags }}

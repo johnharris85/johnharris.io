@@ -8,7 +8,7 @@ title = "About"
 
 ### Personal
 
-Thanks for visiting my corner of the internet! My name is John Harris and I currently live in Seattle, WA (via London, UK and Boston, MA) with my wife and our [2 cats](https://www.instagram.com/tiger_and_leila/).
+Thanks for visiting my corner of the internet! My name is John Harris and I currently live in Mukilteo, WA (via London, UK and Boston, MA) with my wife and our [2 cats](https://www.instagram.com/tiger_and_leila/).
 
 I got interested in computers around 9 yrs old and coded an X-Files fan guide in notepad using HTML before having to learn some hardware stuff to figure out why the original Rainbow Six game wouldn't load past level 5 without a graphics card.
 

@@ -33,7 +33,7 @@ pygmentscodefences = "true"
     author = "John Harris"
     avatar = "/images/profile.png"
     contact = "mailto:john@johnharris.io"
-    bio = "Sr. Cloud Native Architect @ VMware"
+    bio = "Staff Cloud Native Architect @ VMware"
     # Short subtitle/tagline. This is displayed in the header.
     subtitle = "Kubernetes . DevOps . Open-Source"
     themecolor = "#2E94AB" # Defines the tab color in Chrome for Android.
